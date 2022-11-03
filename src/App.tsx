@@ -2,23 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Footer from "./Footer/Footer";
+import Basics from "./Basics/Basics";
+import Experiences from "./Experiences/Experiences";
 
 function App() {
     return (
         <div className="App">
             <main className="App--main">
                 <div className= "App--my-photo">
-                    <img src="/images/my-photo.png"/>
+                    <img src="/images/img-small.jpg"/>
                 </div>
-                <div>
-                    <h1 className="full-name">Michał Korzeniewski</h1>
-                    <h4 className="subtitle">Software Engineer</h4>
-                </div>
-                <a href="mailto:me@mkorzeniewski.com"><button className="mail-button">
-                    <img src="/images/Mail.svg"/>
-                    <p>Email</p>
-                </button></a>
-                <div>
+                <Basics />
+                {/*<div className="Experiences">*/}
+                {/*    <h1 className="Experiences--title">My experience</h1>*/}
+                {/*    <Experiences />*/}
+                {/*</div>*/}
+                <div className="placeholder">
 
                 </div>
                 <Footer />

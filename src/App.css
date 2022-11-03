@@ -1,15 +1,16 @@
 body {
   background-color: #1A1B21;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .App {
   display: flex;
   justify-content: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .App--main {
@@ -18,78 +19,29 @@ body {
   margin-top: 5vh;
   background-color: #282c34;
   height: auto;
-  min-width: 40vw;
+  min-width: 60px;
+  width: 80vw;
   max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.full-name {
-  justify-content: center;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  min-font-size: 5vw;
-  max-font-size: 30px;
-  line-height: 2vh;
-  text-align: center;
-
-  color: #FFFFFF;
+.placeholder {
+  height: max-content;
 }
 
-.subtitle {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  min-font-size: 3vw;
-  max-font-size: 20px;
-  padding: 0 1vh;
-  text-align: center;
-
-  color: #F3BF99;
+.App--my-photo {
+  min-width: 60px;
+  width: 80vw;
+  max-width: 500px;
 }
 
+.App--my-photo img {
+  border-radius: 10px 10px 0 0;
 
-.mail-button > img {
-  padding: 0;
-  margin: 0;
+  min-width: 60px;
+  width: 80vw;
+  max-width: 500px;
 }
 
-.mail-button > p {
-  padding: 0;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 400;
-  min-font-size: 3vw;
-  max-font-size: 20px;
-  line-height: 1vh;
-  text-align: center;
-}
-
-.mail-button > img {
-  margin: auto 0;
-  padding: 3px;
-}
-.mail-button {
-  padding: 2px;
-  margin: 1vh auto;
-
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  display: flex;
-  max-width: 300px;
-  min-height: 40px;
-  width: 300px;
-  box-sizing: border-box;
-  background: #FFFFFF;
-  border: 1px solid #D1D5DB;
-
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 6px;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -109,14 +61,12 @@ body {
   color: white;
 }
 
-.App--my-photo > img {
-  border-radius: 10px 10px 0px 0px;
-  max-width: 500px;
-  min-width: 40vw;
-}
-
 .App-link {
   color: #61dafb;
+}
+
+.Experiences--title{
+
 }
 
 @keyframes App-logo-spin {
