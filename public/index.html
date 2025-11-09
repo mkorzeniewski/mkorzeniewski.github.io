@@ -74,8 +74,8 @@
             position: fixed;
             top: 0;
             left: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #3b82f6, #f59e0b, #8b5cf6);
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #f59e0b);
             z-index: 9999;
             transform-origin: left;
             transition: transform 0.1s ease-out;
@@ -170,8 +170,8 @@
         }
         
         .btn-primary:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
         }
         
         .btn-primary:active {
@@ -260,7 +260,7 @@
             bottom: 0;
             border-radius: inherit;
             padding: 2px;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(139, 92, 246, 0.5));
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(251, 146, 60, 0.5));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -270,8 +270,8 @@
         }
         
         .card-hover:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
         
         .card-hover:hover::before {
@@ -285,8 +285,8 @@
         }
         
         .tech-badge:hover {
-            transform: translateY(-3px) scale(1.1);
-            box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
         }
         
         /* Timeline Styles */
@@ -302,7 +302,7 @@
             top: 0;
             bottom: 0;
             width: 3px;
-            background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+            background: linear-gradient(180deg, #3b82f6, #f59e0b);
             border-radius: 2px;
         }
         
@@ -312,7 +312,7 @@
             top: 0.5rem;
             width: 18px;
             height: 18px;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            background: linear-gradient(135deg, #3b82f6, #f59e0b);
             border-radius: 50%;
             border: 3px solid #0a0a0f;
             box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
@@ -330,15 +330,15 @@
         
         /* Metric Card */
         .metric-card {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(251, 146, 60, 0.1));
             border: 1px solid rgba(59, 130, 246, 0.2);
             transition: all 0.4s;
         }
         
         .metric-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(59, 130, 246, 0.5);
-            box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
+            transform: translateY(-3px);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 8px 16px rgba(59, 130, 246, 0.15);
         }
         
         /* Typing Effect */
@@ -388,7 +388,7 @@
         
         /* Gradient Text */
         .gradient-text {
-            background: linear-gradient(135deg, #60a5fa, #f59e0b, #a78bfa);
+            background: linear-gradient(135deg, #60a5fa, #f59e0b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -593,17 +593,17 @@
                     </div>
 
                     <!-- Architecture & Performance Card -->
-                    <div class="bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-green-500">
+                    <div class="bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-orange-500">
                         <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center">
-                                <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="flex-shrink-0 w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                                 </svg>
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold mb-3 text-white">Architecture & Performance</h3>
                                 <p class="text-gray-300 leading-relaxed">
-                                    Proficiency in <strong class="text-green-400">microservices architecture</strong> enables me to design and operate robust, scalable platforms that are <strong class="text-green-400">cost-aware</strong> and <strong class="text-green-400">performance-optimized</strong>.
+                                    Proficiency in <strong class="text-orange-400">microservices architecture</strong> enables me to design and operate robust, scalable platforms that are <strong class="text-orange-400">cost-aware</strong> and <strong class="text-orange-400">performance-optimized</strong>.
                                 </p>
                             </div>
                         </div>
@@ -611,17 +611,17 @@
                 </div>
 
                 <!-- Interests & Approach -->
-                <div class="bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-purple-500 mb-8">
+                <div class="bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-500 mb-8">
                     <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                             </svg>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold mb-3 text-white">Interests & Approach</h3>
                             <p class="text-gray-300 leading-relaxed mb-4">
-                                My interests center on <strong class="text-purple-400">big data pipelines</strong>, <strong class="text-purple-400">streaming</strong>, and <strong class="text-purple-400">performance engineering</strong>, along with a practical approach to databases and DevOps.
+                                My interests center on <strong class="text-blue-400">big data pipelines</strong>, <strong class="text-blue-400">streaming</strong>, and <strong class="text-blue-400">performance engineering</strong>, along with a practical approach to databases and DevOps.
                             </p>
                         </div>
                     </div>
@@ -708,8 +708,8 @@
                                 <span>Worked on PPC/PPV Advertising System based on lambda architecture (stream & batch processing) with usage of technologies such as Spark, GCP, Kafka, RxJava, TDD, hexagonal architecture</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-green-400 mt-1 font-bold">★</span>
-                                <span><strong class="text-green-400">Cost Optimization:</strong> Migrated ETL processing on GCP, designed and optimized data pipelines, making cost optimisation (infrastructure costs reduced over <strong class="text-green-400">60%</strong>)</span>
+                                <span class="text-orange-400 mt-1">▸</span>
+                                <span><strong class="text-orange-400">Cost Optimization:</strong> Migrated ETL processing on GCP, designed and optimized data pipelines, achieving cost reduction of over <strong class="text-orange-400">60%</strong> in infrastructure costs</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="text-blue-400 mt-1">▸</span>
@@ -741,8 +741,8 @@
                                 <span>Developed distributed research decision platform leveraging ML & AI. Collaborated with scientist teams based in US</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="text-green-400 mt-1 font-bold">★</span>
-                                <span><strong class="text-green-400">Performance Optimization:</strong> Enabled product to scale by leading changes and advocating reactive approach in my team (instance numbers have been reduced from <strong class="text-red-400">25 to 2</strong> with no memory leaks)</span>
+                                <span class="text-orange-400 mt-1">▸</span>
+                                <span><strong class="text-orange-400">Performance Optimization:</strong> Enabled product to scale by leading changes and advocating reactive approach in my team (instance numbers reduced from <strong class="text-orange-400">25 to 2</strong> with no memory leaks)</span>
                             </li>
                         </ul>
                     </article>
@@ -804,90 +804,90 @@
 
                     <!-- Big Data -->
                     <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
-                        <h3 class="text-xl font-bold mb-4 text-green-400 flex items-center gap-2">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
                             </svg>
                             Big Data
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">Apache Spark</span>
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">Apache Airflow</span>
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">BigQuery</span>
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">Dataproc</span>
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">Hive</span>
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">Hadoop</span>
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">Jupyter Notebooks</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Apache Spark</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Apache Airflow</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">BigQuery</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Dataproc</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Hive</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Hadoop</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Jupyter Notebooks</span>
                         </div>
                     </div>
 
                     <!-- AI & LangChain -->
-                    <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll border-2 border-purple-500/50">
-                        <h3 class="text-xl font-bold mb-4 text-purple-400 flex items-center gap-2">
+                    <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll border-2 border-orange-500/50">
+                        <h3 class="text-xl font-bold mb-4 text-orange-400 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                             </svg>
                             AI & LangChain
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-semibold border border-purple-500/50">LangChain</span>
-                            <span class="tech-badge px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-semibold border border-purple-500/50">LLM</span>
-                            <span class="tech-badge px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-semibold border border-purple-500/50">Huggingface</span>
-                            <span class="tech-badge px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-semibold border border-purple-500/50">Machine Learning</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-sm font-semibold border border-orange-500/50">LangChain</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-sm font-semibold border border-orange-500/50">LLM</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-sm font-semibold border border-orange-500/50">Huggingface</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-sm font-semibold border border-orange-500/50">Machine Learning</span>
                         </div>
                     </div>
 
                     <!-- Cloud & DevOps -->
                     <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
-                        <h3 class="text-xl font-bold mb-4 text-yellow-400 flex items-center gap-2">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
                             </svg>
                             Cloud & DevOps
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm border border-yellow-500/30">GCP</span>
-                            <span class="tech-badge px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm border border-yellow-500/30">AWS</span>
-                            <span class="tech-badge px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm border border-yellow-500/30">Docker</span>
-                            <span class="tech-badge px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm border border-yellow-500/30">Kubernetes</span>
-                            <span class="tech-badge px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm border border-yellow-500/30">Terraform</span>
-                            <span class="tech-badge px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm border border-yellow-500/30">Ansible</span>
-                            <span class="tech-badge px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm border border-yellow-500/30">Linux</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">GCP</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">AWS</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Docker</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Kubernetes</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Terraform</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Ansible</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Linux</span>
                         </div>
                     </div>
 
                     <!-- Frameworks -->
                     <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
-                        <h3 class="text-xl font-bold mb-4 text-red-400 flex items-center gap-2">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                             </svg>
                             Frameworks
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm border border-red-500/30">Spring Boot</span>
-                            <span class="tech-badge px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm border border-red-500/30">Spring Cloud</span>
-                            <span class="tech-badge px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm border border-red-500/30">Spring Webflux</span>
-                            <span class="tech-badge px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm border border-red-500/30">RxJava</span>
-                            <span class="tech-badge px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm border border-red-500/30">Spock</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spring Boot</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spring Cloud</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spring Webflux</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">RxJava</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spock</span>
                         </div>
                     </div>
 
                     <!-- Data Technologies -->
                     <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
-                        <h3 class="text-xl font-bold mb-4 text-cyan-400 flex items-center gap-2">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
                             </svg>
                             Data Technologies
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm border border-cyan-500/30">Kafka</span>
-                            <span class="tech-badge px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm border border-cyan-500/30">PostgreSQL</span>
-                            <span class="tech-badge px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm border border-cyan-500/30">MongoDB</span>
-                            <span class="tech-badge px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm border border-cyan-500/30">Redis</span>
-                            <span class="tech-badge px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm border border-cyan-500/30">Cassandra</span>
-                            <span class="tech-badge px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm border border-cyan-500/30">Elastic Search</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Kafka</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">PostgreSQL</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">MongoDB</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Redis</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Cassandra</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Elastic Search</span>
                         </div>
                     </div>
                 </div>
@@ -900,7 +900,7 @@
                 <h2 id="education-heading" class="text-4xl sm:text-5xl font-bold mb-16 text-center gradient-text fade-in-on-scroll">Education</h2>
                 
                 <div class="space-y-6">
-                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-green-500 shadow-lg hover:shadow-xl transition-shadow">
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 shadow-lg hover:shadow-xl transition-shadow">
                         <h3 class="text-2xl font-bold mb-2">Master's Degree in Computer Science</h3>
                         <p class="text-xl text-orange-400 mb-2 font-semibold">Warsaw University of Technology</p>
                         <p class="text-gray-400 mb-2">2019 - 2021</p>
@@ -908,7 +908,7 @@
                         <p class="text-gray-300 mt-2">Thesis: Cloud computing security – a secure container orchestration</p>
                     </article>
 
-                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-green-500 shadow-lg hover:shadow-xl transition-shadow">
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 shadow-lg hover:shadow-xl transition-shadow">
                         <h3 class="text-2xl font-bold mb-2">Bachelor's Degree in Mechanical Engineering</h3>
                         <p class="text-xl text-orange-400 mb-2 font-semibold">Warsaw University of Technology</p>
                         <p class="text-gray-400 mb-2">2015 - 2019</p>
@@ -924,7 +924,7 @@
                 <h2 id="certifications-heading" class="text-4xl sm:text-5xl font-bold mb-16 text-center gradient-text fade-in-on-scroll">Certifications</h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <article class="bg-gray-800 rounded-xl p-6 sm:p-8 border-2 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+                    <article class="bg-gray-800 rounded-xl p-6 sm:p-8 border-2 border-orange-500 shadow-lg hover:shadow-xl transition-shadow">
                         <h3 class="text-xl font-bold mb-2">Professional Data Engineer</h3>
                         <p class="text-orange-400 mb-2 font-semibold">Google Cloud</p>
                         <p class="text-gray-400 text-sm mb-4">Issued: May 2022 | Expired: May 2024</p>
@@ -936,7 +936,7 @@
                         </a>
                     </article>
 
-                    <article class="bg-gray-800 rounded-xl p-6 sm:p-8 border-2 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+                    <article class="bg-gray-800 rounded-xl p-6 sm:p-8 border-2 border-orange-500 shadow-lg hover:shadow-xl transition-shadow">
                         <h3 class="text-xl font-bold mb-2">AWS Certified Solutions Architect – Associate</h3>
                         <p class="text-orange-400 mb-2 font-semibold">Amazon Web Services (AWS)</p>
                         <p class="text-gray-400 text-sm mb-4">Issued: Aug 2022 | Expires: Aug 2025</p>
@@ -958,25 +958,25 @@
                 
                 <div class="space-y-6">
                     <!-- Hackathons -->
-                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-purple-500 shadow-lg card-hover fade-in-on-scroll">
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-orange-500 shadow-lg card-hover fade-in-on-scroll">
                         <div class="flex items-start justify-between mb-4">
                             <div>
                                 <h3 class="text-2xl font-bold text-white mb-2">Hackathons</h3>
                                 <p class="text-gray-300 mb-4">Member of the award-winning hackathon team <a href="https://krakenteam.it" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-medium underline decoration-2 underline-offset-2">krakenteam.it</a></p>
                             </div>
-                            <span class="px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-xs font-semibold border border-purple-500/50">Award Winner</span>
+                            <span class="px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-xs font-semibold border border-orange-500/50">Award Winner</span>
                         </div>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tech-badge px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Python</span>
-                            <span class="tech-badge px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Django</span>
-                            <span class="tech-badge px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Huggingface</span>
-                            <span class="tech-badge px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm border border-purple-500/30">LLM</span>
-                            <span class="tech-badge px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Postgres</span>
-                            <span class="tech-badge px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Docker</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Python</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Django</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Huggingface</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">LLM</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Postgres</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Docker</span>
                         </div>
-                        <div class="bg-purple-600/10 border border-purple-500/20 rounded-lg p-3">
+                        <div class="bg-orange-600/10 border border-orange-500/20 rounded-lg p-3">
                             <p class="text-gray-300 text-sm">
-                                <strong class="text-purple-400">🏆 Awards:</strong> Participant of Hack(art)hon (Sep 2022), Finalist of Kimaton dla Miast (Nov 2021)
+                                <strong class="text-orange-400">Awards:</strong> Participant of Hack(art)hon (Sep 2022), Finalist of Kimaton dla Miast (Nov 2021)
                             </p>
                         </div>
                     </article>
@@ -1003,17 +1003,17 @@
                     </article>
 
                     <!-- OpenTelemetry -->
-                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-green-500 shadow-lg card-hover fade-in-on-scroll">
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 shadow-lg card-hover fade-in-on-scroll">
                         <div class="flex items-start justify-between mb-4">
                             <div>
                                 <h3 class="text-2xl font-bold text-white mb-2">OpenTelemetry Java</h3>
                                 <p class="text-gray-300 mb-4">Contribution to an open source project</p>
                             </div>
-                            <span class="px-3 py-1 bg-green-600/30 text-green-300 rounded-full text-xs font-semibold border border-green-500/50">Open Source</span>
+                            <span class="px-3 py-1 bg-blue-600/30 text-blue-300 rounded-full text-xs font-semibold border border-blue-500/50">Open Source</span>
                         </div>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">Open Source</span>
-                            <span class="tech-badge px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm border border-green-500/30">Java</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Open Source</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Java</span>
                         </div>
                     </article>
                 </div>
@@ -1021,15 +1021,15 @@
         </section>
         
         <!-- Call to Action Section -->
-        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/30 via-purple-900/30 to-orange-900/30 border-y border-gray-700/50">
+        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/30 to-orange-900/30 border-y border-gray-700/50">
             <div class="max-w-4xl mx-auto text-center fade-in-on-scroll">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-6 gradient-text">Let's Build Something Amazing Together</h2>
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6 gradient-text">Let's Connect</h2>
                 <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your team's success.
+                    I'm open to discussing new projects, technical challenges, or opportunities to contribute to your team's success.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a href="mailto:me@mkorzeniewski.com" 
-                       class="btn-primary flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold shadow-xl text-lg"
+                       class="btn-primary flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-orange-600 text-white rounded-lg font-semibold shadow-xl text-lg"
                        aria-label="Send email to Michał Korzeniewski">
                         <img src="/images/Mail.svg" alt="" class="w-5 h-5" aria-hidden="true">
                         Get In Touch
