@@ -1,43 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Michał Korzeniewski - Senior Data Engineer specializing in AI, LangChain, cloud technologies, DevOps, and backend engineering">
+    <title>Michał Korzeniewski - Senior Data Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #1A1B21;
+        }
+        #mobile-menu {
+            display: none;
+        }
+        #mobile-menu.open {
+            display: block;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold">MK</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                    <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                    <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                    <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                    <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="md:hidden pb-4">
+                <div class="flex flex-col space-y-2 mt-4">
+                    <a href="#about" class="hover:text-blue-400 transition py-2">About</a>
+                    <a href="#experience" class="hover:text-blue-400 transition py-2">Experience</a>
+                    <a href="#skills" class="hover:text-blue-400 transition py-2">Skills</a>
+                    <a href="#education" class="hover:text-blue-400 transition py-2">Education</a>
+                    <a href="#certifications" class="hover:text-blue-400 transition py-2">Certifications</a>
+                    <a href="#projects" class="hover:text-blue-400 transition py-2">Projects</a>
+                    <a href="#contact" class="hover:text-blue-400 transition py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.remove('open');
+            });
+        });
+    </script>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-8">
+                <img src="/images/my-photo.png" alt="Michał Korzeniewski" 
+                     class="w-48 h-48 mx-auto rounded-full object-cover border-4 border-gray-700 shadow-2xl">
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Michał Korzeniewski</h1>
+            <h2 class="text-xl sm:text-2xl md:text-3xl text-orange-400 mb-6">Senior Data Engineer</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Specializing in AI, LangChain, cloud technologies, DevOps, and backend engineering. 
+                Building scalable data pipelines and distributed systems.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="mailto:me@mkorzeniewski.com" 
+                   class="flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg">
+                    <img src="/images/Mail.svg" alt="Email" class="w-5 h-5">
+                    Email
+                </a>
+                <a href="https://www.linkedin.com/in/mkorzeniewski/" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg">
+                    <img src="/images/ln-white.svg" alt="LinkedIn" class="w-5 h-5">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center">About</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                I'm a software engineer with expertise in cloud technologies, distributed systems, and big data. 
+                I mostly work with JVM languages such as Scala, Java, and Kotlin. Proficiency in microservices 
+                architecture enable me to design and develop robust and scalable software systems. My interests 
+                lie in big data and performance optimization. I also keen on various types of data bases and 
+                DevOps technologies. I value collaboration and effective communication, which have been key to 
+                the success. If you're seeking a dedicated engineer with a passion for innovative solutions, 
+                let's connect.
+            </p>
+        </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">Experience</h2>
+            
+            <div class="space-y-8">
+                <!-- Tesco Technology -->
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-blue-500">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">Senior Data Engineer</h3>
+                            <p class="text-xl text-orange-400">Tesco Technology</p>
+                        </div>
+                        <p class="text-gray-400 mt-2 sm:mt-0">2023 - Present</p>
+                    </div>
+                    <p class="text-gray-400 mb-4">Remote, Poland</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Develop and maintain ETL pipelines using Scala and Apache Spark on Hadoop to process large-scale customer order data. Enabling better decision-making and analytics.</li>
+                        <li>Led the modernization of a legacy codebase by introducing CI/CD processes, improving deployment efficiency and reducing manual interventions.</li>
+                        <li>Established and advocate engineering best practices, enhancing code quality, maintainability, and collaboration within the team.</li>
+                    </ul>
+                </div>
+
+                <!-- Allegro -->
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-blue-500">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">Data Engineer</h3>
+                            <p class="text-xl text-orange-400">Allegro</p>
+                        </div>
+                        <p class="text-gray-400 mt-2 sm:mt-0">2021 - 2023</p>
+                    </div>
+                    <p class="text-gray-400 mb-4">Warsaw, Poland</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Worked on PPC/PPV Advertising System based on lambda architecture (stream & batch processing) with usage of technologies such as Spark, GCP, Kafka, RxJava, TDD, hexagonal architecture</li>
+                        <li>Migrated ETL processing on GCP, designed and optimized data pipelines, making cost optimisation (infrastructure costs reduced over 60%)</li>
+                        <li>Coordinated process of expanding internationally; designed strategy, cooperated across department</li>
+                    </ul>
+                </div>
+
+                <!-- Roche -->
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-blue-500">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">Software Engineer</h3>
+                            <p class="text-xl text-orange-400">Roche</p>
+                        </div>
+                        <p class="text-gray-400 mt-2 sm:mt-0">2020 - 2021</p>
+                    </div>
+                    <p class="text-gray-400 mb-4">Warsaw, Poland</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Developed distributed research decision platform leveraging ML & AI. Collaborated with scientist teams based in US</li>
+                        <li>Enabled product to scale by leading changes and advocating reactive approach in my team (instance numbers have been reduced from 25 to 2 with no memory leaks)</li>
+                    </ul>
+                </div>
+
+                <!-- Reckitt Benckiser -->
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-blue-500">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">Software Engineer</h3>
+                            <p class="text-xl text-orange-400">Reckitt Benckiser</p>
+                        </div>
+                        <p class="text-gray-400 mt-2 sm:mt-0">2018 - 2020</p>
+                    </div>
+                    <p class="text-gray-400 mb-4">Warsaw, Poland</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Developed a distributed system for collecting worldwide clients survey data with technologies like Vert.x, RxJava, Hazelcast</li>
+                        <li>Led architecting and implementing a data stream processing solution using AWS Kinesis, Lambda (Python) with an IOC written in terraform</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Languages -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-orange-400">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Java</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Scala</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Kotlin</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Bash</span>
+                    </div>
+                </div>
+
+                <!-- Big Data -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-orange-400">Big Data</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Apache Spark</span>
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Apache Airflow</span>
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">BigQuery</span>
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Dataproc</span>
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Hive</span>
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Hadoop</span>
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Jupyter Notebooks</span>
+                    </div>
+                </div>
+
+                <!-- AI & LangChain (Highlighted) -->
+                <div class="bg-gray-800 rounded-lg p-6 border-2 border-purple-500">
+                    <h3 class="text-xl font-bold mb-4 text-purple-400">AI & LangChain</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-semibold">LangChain</span>
+                        <span class="px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-semibold">LLM</span>
+                        <span class="px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-semibold">Huggingface</span>
+                        <span class="px-3 py-1 bg-purple-600/30 text-purple-300 rounded-full text-sm font-semibold">Machine Learning</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-orange-400">Cloud & DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">GCP</span>
+                        <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">AWS</span>
+                        <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">Docker</span>
+                        <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">Kubernetes</span>
+                        <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">Terraform</span>
+                        <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">Ansible</span>
+                        <span class="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">Linux</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-orange-400">Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm">Spring Boot</span>
+                        <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm">Spring Cloud</span>
+                        <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm">Spring Webflux</span>
+                        <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm">RxJava</span>
+                        <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-sm">Spock</span>
+                    </div>
+                </div>
+
+                <!-- Data Technologies -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-orange-400">Data Technologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm">Kafka</span>
+                        <span class="px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm">MongoDB</span>
+                        <span class="px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm">Redis</span>
+                        <span class="px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm">Cassandra</span>
+                        <span class="px-3 py-1 bg-cyan-600/20 text-cyan-300 rounded-full text-sm">Elastic Search</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">Education</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 class="text-2xl font-bold mb-2">Master's Degree in Computer Science</h3>
+                    <p class="text-xl text-orange-400 mb-2">Warsaw University of Technology</p>
+                    <p class="text-gray-400 mb-2">2019 - 2021</p>
+                    <p class="text-gray-300">GPA: 4.63/5 - Very Good</p>
+                    <p class="text-gray-300 mt-2">Thesis: Cloud computing security – a secure container orchestration</p>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 class="text-2xl font-bold mb-2">Bachelor's Degree in Mechanical Engineering</h3>
+                    <p class="text-xl text-orange-400 mb-2">Warsaw University of Technology</p>
+                    <p class="text-gray-400 mb-2">2015 - 2019</p>
+                    <p class="text-gray-300 mt-2">Thesis: Computational analysis of flow around levitating oil droplet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">Certifications</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-800 rounded-lg p-6 border-2 border-yellow-500">
+                    <h3 class="text-xl font-bold mb-2">Professional Data Engineer</h3>
+                    <p class="text-orange-400 mb-2">Google Cloud</p>
+                    <p class="text-gray-400 text-sm mb-4">Issued: May 2022 | Expired: May 2024</p>
+                    <a href="https://www.credential.net/c1495d63-756e-43c0-b632-3fe1589db335" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="text-blue-400 hover:text-blue-300 text-sm">View Credential →</a>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 border-2 border-yellow-500">
+                    <h3 class="text-xl font-bold mb-2">AWS Certified Solutions Architect – Associate</h3>
+                    <p class="text-orange-400 mb-2">Amazon Web Services (AWS)</p>
+                    <p class="text-gray-400 text-sm mb-4">Issued: Aug 2022 | Expires: Aug 2025</p>
+                    <a href="https://www.credly.com/badges/6cb0f813-7d47-483e-967b-4ca7c6ba866d/linked_in_profile" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="text-blue-400 hover:text-blue-300 text-sm">View Credential →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">Projects</h2>
+            
+            <div class="space-y-6">
+                <!-- Hackathons -->
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-purple-500">
+                    <h3 class="text-2xl font-bold mb-2">Hackathons</h3>
+                    <p class="text-gray-300 mb-4">Member of the award-winning hackathon team <a href="https://krakenteam.it" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300">krakenteam.it</a></p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Django</span>
+                        <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Huggingface</span>
+                        <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">LLM</span>
+                        <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Postgres</span>
+                        <span class="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">Docker</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4">Awards: Participant of Hack(art)hon (Sep 2022), Finalist of Kimaton dla Miast (Nov 2021)</p>
+                </div>
+
+                <!-- TokLok -->
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold mb-2">TokLok</h3>
+                    <p class="text-gray-300 mb-4">Messaging app - improving infrastructure, optimising costs, developing integration with payment system</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Java</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">MongoDB</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">MQTT</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Redis</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">RabbitMQ</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Spring Boot</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">AWS</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Axon</span>
+                    </div>
+                </div>
+
+                <!-- OpenTelemetry -->
+                <div class="bg-gray-800/50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 class="text-2xl font-bold mb-2">OpenTelemetry Java</h3>
+                    <p class="text-gray-300 mb-4">Contribution to an open source project</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Open Source</span>
+                        <span class="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center">Get In Touch</h2>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
+                <a href="mailto:me@mkorzeniewski.com" 
+                   class="flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <img src="/images/Mail.svg" alt="Email" class="w-5 h-5">
+                    me@mkorzeniewski.com
+                </a>
+                <a href="https://www.linkedin.com/in/mkorzeniewski/" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                    <img src="/images/ln-white.svg" alt="LinkedIn" class="w-5 h-5">
+                    LinkedIn Profile
+                </a>
+            </div>
+            <div class="text-center text-gray-400">
+                <p>© 2024 Michał Korzeniewski. All rights reserved.</p>
+                <p class="mt-2">Website: <a href="https://mkorzeniewski.com" class="text-blue-400 hover:text-blue-300">mkorzeniewski.com</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

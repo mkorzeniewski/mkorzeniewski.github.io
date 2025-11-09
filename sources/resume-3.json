@@ -1,0 +1,189 @@
+{
+  "selectedTemplate": 4,
+  "headings": {
+    "skills": "",
+    "awards": "Certifications",
+    "projects": "Projects"
+  },
+  "basics": {
+    "email": "me@mkorzeniewski.com",
+    "phone": "+48 725421189",
+    "name": "Michał Korzeniewski",
+    "location": {
+      "address": "Lublin, Poland"
+    },
+    "website": "mkorzeniewski.com"
+  },
+  "work": [
+    {
+      "highlights": [
+        "Develop and maintain ETL pipelines using Scala and Apache Spark on Hadoop to process large-scale customer order data. Enabling better decision-making and analytics.",
+        "Led the modernization of a legacy codebase by introducing CI/CD processes, improving deployment efficiency and reducing manual interventions.",
+        "Established and advocate engineering best practices, enhancing code quality, maintainability, and collaboration within the team."
+      ],
+      "company": "Tesco Technology",
+      "position": "Senior Data Engineer",
+      "location": "Remote, Poland",
+      "startDate": "2023",
+      "endDate": "Present"
+    },
+    {
+      "highlights": [
+        "Worked on PPC/PPV Advertising System based on lambda architecture (stream & batch processing) with usage of technologies such as Spark, GCP, Kafka, RxJava, TDD, hexagonal architecture",
+        "Migrated ETL processing on GCP, desigined and optimized data pipelines, making cost optimisation (infrastructure costs reduced over 60%)",
+        "Coordinated process of expanding internactionaly; designed strategy, cooperated across department"
+      ],
+      "company": "Allegro",
+      "position": "Data Engineer",
+      "location": "Warsaw, Poland",
+      "startDate": "2021",
+      "endDate": "2023"
+    },
+    {
+      "highlights": [
+        "Developed distributed research decision platform leveraging ML & AI. Colaborated with scientist teams based in US",
+        "Enabled product to scale by leading changes and advocating reactive aproach in my team (instance numbers have been reduced from 25 to 2 with no memory leaks)"
+      ],
+      "company": "Roche",
+      "position": "Software Engineer",
+      "location": "Warsaw, Poland",
+      "startDate": "2020",
+      "endDate": "2021"
+    },
+    {
+      "location": "Warsaw, Poland",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "2018",
+      "endDate": "2020",
+      "highlights": [
+        "Developed a distributed system for collecting worldwide clients survey data with technologies like Vert.x, RxJava, Hazelcast",
+        "Led of architecting and implementing a data stream processing solution using AWS Kinesis, Lambda (Python) with an IOC written in terraform"
+      ],
+      "company": "Reckitt Benckiser"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Warsaw University of Technology",
+      "location": "Warsaw, Poland",
+      "endDate": "2021",
+      "studyType": "MS",
+      "area": "Computer Science",
+      "startDate": "2019",
+      "gpa": "4.63"
+    }
+  ],
+  "skills": [
+    {
+      "keywords": ["Java", "Scala", "Kotlin", "Python", "Bash"],
+      "name": "languages"
+    },
+    {
+      "keywords": [
+        "Spark",
+        "Apache Airflow",
+        "BigQuery",
+        "Dataproc",
+        "Hive",
+        "Hadoop",
+        "Jupyter Notebooks"
+      ],
+      "name": "big data"
+    },
+    {
+      "keywords": [
+        "Spring Boot",
+        "Spring Cloud, Spring Data, Spring Webflux",
+        "RxJava",
+        "Spock"
+      ],
+      "name": "frameworks"
+    },
+    {
+      "keywords": [
+        "GCP",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Ansible",
+        "Terraform",
+        "Linux"
+      ],
+      "name": "cloud & devops"
+    },
+    {
+      "keywords": [
+        "Kafka",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Cassandra",
+        "Elastic Search"
+      ],
+      "name": "data"
+    },
+    {
+      "keywords": [
+        "Proficient English, Polish Native, Communicative: Russian, German"
+      ],
+      "name": "languages"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": ["contribution to an opensource project"],
+      "name": "openetelemetry-java"
+    },
+    {
+      "keywords": [
+        "Java",
+        "Mongo",
+        "MQTT",
+        "Redis",
+        "RabbitMQ",
+        "Spring Boot",
+        "AWS",
+        "Axon"
+      ],
+      "description": "Messaging app - improving infrastructure, optimising costs, developing integration with payment system",
+      "name": "TokLok"
+    },
+    {
+      "keywords": [
+        "Python",
+        "Django",
+        "Bootstrap",
+        "docker-compose",
+        "Postgres",
+        "Huggingface",
+        "LLM"
+      ],
+      "name": "Hackathons",
+      "description": "Member of the award-winning hackathon team https://krakenteam.it"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Professional Data Engineer",
+      "awarder": "Google Cloud"
+    },
+    {
+      "title": "Certified Solutions Architect Associate",
+      "awarder": "AWS"
+    },
+    {
+      "title": "Consultancy Academy",
+      "awarder": "Dale Carnegie Training"
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "education",
+    "skills",
+    "awards",
+    "projects"
+  ]
+}
