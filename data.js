@@ -1,7 +1,3 @@
-// Professional data for Michał Korzeniewski
-// This file contains merged data from linkedin.json and resume-3.json
-// Update this file to easily modify website content
-
 const profileData = {
     basics: {
         name: "Michał Korzeniewski",

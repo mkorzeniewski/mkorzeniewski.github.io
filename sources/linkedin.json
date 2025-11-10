@@ -1,0 +1,143 @@
+{
+    "profile": {
+      "name": "Michał Korzeniewski",
+      "headline": "Senior Data Engineer at Tesco",
+      "location": "Warsaw, Mazowieckie, Poland",
+      "url": "https://www.linkedin.com/in/mkorzeniewski/?originalSubdomain=pl",
+      "connections": "500+",
+      "followers": 1261,
+      "about": "I'm a software engineer with expertise in cloud technologies, distributed systems, and big data. I mostly work with JVM languages such as Scala, Java, and Kotlin. Proficiency in microservices architecture enable me to design and develop robust and scalable software systems. My interests lie in big data and performance optimization. I also keen on various types of data bases and DevOps technologies. I value collaboration and effective communication, which have been key to the success. If you're seeking a dedicated engineer with a passion for innovative solutions, let's connect.",
+      "topSkills": ["Apache Spark", "Google Cloud Platform (GCP)", "Scala"]
+    },
+    "experience": [
+      {
+        "position": "Senior Data Engineer",
+        "company": "Tesco Technology",
+        "duration": "Oct 2023 to Present (2 yrs 2 mos)",
+        "skills": ["Apache Spark", "Scala", "+2 more"]
+      },
+      {
+        "position": "Software Engineer",
+        "company": "Allegro",
+        "employmentType": "Full-time",
+        "duration": "Jul 2021 to Oct 2023 (2 yrs 4 mos)",
+        "location": "Warsaw, Mazowieckie, Poland",
+        "description": "Worked on a PPC/PPV Advertising System based on lambda architecture, handling high-throughput and large volumes of data via ETL processing in the cloud and microservices for streaming data.",
+        "skills": ["Apache Spark", "Spring Framework", "+7 more"]
+      },
+      {
+        "position": "Software Engineer - IT Professional",
+        "company": "Roche",
+        "employmentType": "Full-time",
+        "duration": "Jul 2020 to Jun 2021 (1 yr)",
+        "location": "Warsaw, Mazowieckie, Poland",
+        "description": "Microservices-based web application - AI platform and collaboration tool",
+        "skills": ["Spring Boot", "Terraform", "+8 more"]
+      },
+      {
+        "position": "Junior Java Developer",
+        "company": "RB (Reckitt)",
+        "duration": "Aug 2018 to Jul 2020 (2 yrs)",
+        "location": "Warszawa, woj. mazowieckie, Polska",
+        "description": "A distributed system for collecting client survey data from all around the world"
+      }
+    ],
+    "education": [
+      {
+        "school": "Warsaw University of Technology",
+        "degree": "Master's degree",
+        "field": "Computer Science",
+        "duration": "2019 - 2021",
+        "grade": "4.63/5 - very good",
+        "thesis": "Cloud computing security – a secure container orchestration"
+      },
+      {
+        "school": "Warsaw University of Technology",
+        "degree": "Bachelor's degree",
+        "field": "Mechanical Engineering",
+        "duration": "2015 - 2019",
+        "thesis": "Computational analysis of flow around levitating oil droplet"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "AWS Certified Solutions Architect – Associate",
+        "issuer": "Amazon Web Services (AWS)",
+        "issued": "Aug 2022",
+        "expired": "Aug 2025",
+        "credentialUrl": "https://www.credly.com/badges/6cb0f813-7d47-483e-967b-4ca7c6ba866d/linked_in_profile"
+      },
+      {
+        "name": "Professional Data Engineer",
+        "issuer": "Google Cloud - Minnesota",
+        "issued": "May 2022",
+        "expired": "May 2024",
+        "credentialId": "51595568",
+        "credentialUrl": "https://www.credential.net/c1495d63-756e-43c0-b632-3fe1589db335"
+      }
+    ],
+    "skills": [
+      "Java",
+      "Apache Spark",
+      "Google Cloud Platform (GCP)",
+      "Scala",
+      "Spring Boot",
+      "Spring Framework",
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "AWS",
+      "Vert.x",
+      "MongoDB",
+      "Redis",
+      "MuleSoft",
+      "Python",
+      "Reactive Programming"
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "proficiency": "Professional working proficiency"
+      },
+      {
+        "language": "German",
+        "proficiency": "Elementary proficiency"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "Association for Computing Machinery",
+        "role": "member",
+        "duration": "Dec 2021 - Dec 2023"
+      }
+    ],
+    "awards": [
+      {
+        "title": "Participant of the Hackarthon",
+        "issuer": "Centrum Cyfrowe Foundation, Zacheta - National Gallery of Art and The Society for The Encouragement of Fine Arts",
+        "date": "Sep 2022",
+        "team": "kraken_team"
+      },
+      {
+        "title": "Finalist of the hackathon - Kimaton dla Miast",
+        "issuer": "PFR Polish Development Found Group",
+        "date": "Nov 2021",
+        "team": "kraken_team"
+      }
+    ],
+    "interests": {
+      "topVoices": [
+        {
+          "name": "Simon Sinek",
+          "headline": "Optimist, New York Times bestselling author of 'Start with Why' and 'The Infinite Game', and founder of The Optimism Company",
+          "followers": 8735422
+        },
+        {
+          "name": "Zach Wilson",
+          "headline": "Data Engineering > AI Engineering and I'm tired of pretending it isn't",
+          "followers": 496897
+        }
+      ]
+    }
+  }
+  
