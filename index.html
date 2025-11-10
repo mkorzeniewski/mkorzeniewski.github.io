@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Michał Korzeniewski - Senior Data Engineer | AI, Cloud & Big Data Expert</title>
+    <meta name="title" content="Michał Korzeniewski - Senior Data Engineer | AI, Cloud & Big Data Expert">
+    <meta name="description" content="Senior Data Engineer specializing in Big Data, AI, cloud technologies, DevOps, and backend engineering. Building scalable data pipelines and distributed systems.">
+    <meta name="keywords" content="Data Engineer, AI, LangChain, Cloud Computing, Big Data, Apache Spark, Scala, Java, GCP, AWS, DevOps">
+    <meta name="author" content="Michał Korzeniewski">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mkorzeniewski.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mkorzeniewski.com/">
+    <meta property="og:title" content="Michał Korzeniewski - Senior Data Engineer | AI, Cloud & Big Data Expert">
+    <meta property="og:description" content="Senior Data Engineer specializing in AI, LangChain, cloud technologies, DevOps, and backend engineering. Building scalable data pipelines and distributed systems.">
+    <meta property="og:image" content="https://mkorzeniewski.com/images/my-photo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Michał Korzeniewski">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mkorzeniewski.com/">
+    <meta name="twitter:title" content="Michał Korzeniewski - Senior Data Engineer | AI, Cloud & Big Data Expert">
+    <meta name="twitter:description" content="Senior Data Engineer specializing in AI, LangChain, cloud technologies, DevOps, and backend engineering.">
+    <meta name="twitter:image" content="https://mkorzeniewski.com/images/my-photo.png">
+    <meta name="twitter:creator" content="@mkorzeniewski">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background-color: #0a0a0f;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(251, 146, 60, 0.05) 0px, transparent 50%);
+            color: #FFFFFF;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Scroll Progress Bar */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #f59e0b);
+            z-index: 9999;
+            transform-origin: left;
+            transition: transform 0.1s ease-out;
+        }
+        
+        /* Hero Gradient Background with Animated Particles */
+        .hero-gradient {
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1b26 25%, #2d2e3a 50%, #1a1b26 75%, #0a0a0f 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+        
+        .hero-gradient::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(251, 146, 60, 0.15) 0%, transparent 70%);
+            animation: pulse 20s ease-in-out infinite;
+        }
+        
+        /* Floating Tech Icons */
+        .floating-icon {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+            50% {
+                transform: translateY(-40px) rotate(-5deg);
+            }
+            75% {
+                transform: translateY(-20px) rotate(3deg);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(1.1);
+            }
+        }
+        
+        /* Button Animations with Glow Effect */
+        .btn-primary {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(0);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .btn-primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
+        }
+        
+        .btn-primary:active {
+            transform: translateY(-1px) scale(1);
+        }
+        
+        /* Smooth Fade In with Stagger */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        
+        /* Scroll-triggered animations */
+        .fade-in-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Skill Bar Animation */
+        .skill-bar {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .skill-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border-radius: 4px;
+            width: 0;
+            transition: width 1.5s ease-out;
+            position: relative;
+        }
+        
+        .skill-bar-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        
+        /* Card Hover Effects */
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        
+        .card-hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.5), rgba(251, 146, 60, 0.5));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card-hover:hover::before {
+            opacity: 1;
+        }
+        
+        /* Tech Badge Hover */
+        .tech-badge {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .tech-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+        }
+        
+        /* Timeline Styles */
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #3b82f6, #f59e0b);
+            border-radius: 2px;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: -8px;
+            top: 0.5rem;
+            width: 18px;
+            height: 18px;
+            background: linear-gradient(135deg, #3b82f6, #f59e0b);
+            border-radius: 50%;
+            border: 3px solid #0a0a0f;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+            animation: pulse-dot 2s infinite;
+        }
+        
+        @keyframes pulse-dot {
+            0%, 100% {
+                box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 0 8px rgba(59, 130, 246, 0);
+            }
+        }
+        
+        /* Metric Card */
+        .metric-card {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(251, 146, 60, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            transition: all 0.4s;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 8px 16px rgba(59, 130, 246, 0.15);
+        }
+        
+        /* Typing Effect */
+        .typing-effect::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            51%, 100% {
+                opacity: 0;
+            }
+        }
+        
+        /* Mobile Menu */
+        #mobile-menu {
+            display: none;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        #mobile-menu.open {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Image Lazy Loading */
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+        
+        /* Section Spacing */
+        section {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Parallax Effect */
+        .parallax {
+            transition: transform 0.3s ease-out;
+        }
+        
+        /* Number Counter Animation */
+        .counter {
+            display: inline-block;
+        }
+    </style>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Michał Korzeniewski",
+        "jobTitle": "Senior Data Engineer",
+        "url": "https://mkorzeniewski.com",
+        "image": "https://mkorzeniewski.com/images/my-photo.png",
+        "email": "me@mkorzeniewski.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/mkorzeniewski/"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lublin",
+            "addressCountry": "PL"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Warsaw University of Technology"
+        },
+        "knowsAbout": [
+            "Data Engineering",
+            "Artificial Intelligence",
+            "Cloud Computing",
+            "Big Data",
+            "Apache Spark",
+            "Scala",
+            "Java",
+            "DevOps"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Tesco Technology"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <header>
+        <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-800/50 shadow-lg" role="navigation" aria-label="Main navigation">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="text-xl font-bold text-white">Michał Korzeniewski</div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">About</a>
+                        <a href="#experience" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Experience</a>
+                        <a href="#skills" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Skills</a>
+                        <a href="#education" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Education</a>
+                        <a href="#certifications" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Certifications</a>
+                        <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Projects</a>
+                        <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Contact</a>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-blue-500 rounded p-2" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="md:hidden pb-4" role="menu">
+                    <div class="flex flex-col space-y-2 mt-4">
+                        <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors py-2 font-medium" role="menuitem">About</a>
+                        <a href="#experience" class="text-gray-300 hover:text-blue-400 transition-colors py-2 font-medium" role="menuitem">Experience</a>
+                        <a href="#skills" class="text-gray-300 hover:text-blue-400 transition-colors py-2 font-medium" role="menuitem">Skills</a>
+                        <a href="#education" class="text-gray-300 hover:text-blue-400 transition-colors py-2 font-medium" role="menuitem">Education</a>
+                        <a href="#certifications" class="text-gray-300 hover:text-blue-400 transition-colors py-2 font-medium" role="menuitem">Certifications</a>
+                        <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors py-2 font-medium" role="menuitem">Projects</a>
+                        <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors py-2 font-medium" role="menuitem">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-gradient pt-32 pb-24 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center" aria-label="Hero section">
+            <div class="max-w-6xl mx-auto text-center relative z-10">
+                <div class="mb-8 fade-in-up">
+                    <img src="/images/my-photo.png" 
+                         alt="Michał Korzeniewski - Senior Data Engineer" 
+                         loading="eager"
+                         class="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full object-cover border-4 border-gray-700 shadow-2xl hover:scale-105 transition-transform duration-300"
+                         width="224"
+                         height="224">
+                </div>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 fade-in-up gradient-text" style="animation-delay: 0.1s;">
+                    Michał Korzeniewski
+                </h1>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl mb-8 font-semibold fade-in-up gradient-text" style="animation-delay: 0.2s;">
+                    Senior Data Engineer
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed fade-in-up" style="animation-delay: 0.3s;">
+                    Specializing in <strong class="text-white">Big Data</strong>, <strong class="text-white">AI & LangChain</strong>, <strong class="gradient-text">Cloud Technologies</strong>, DevOps, and backend engineering. 
+                    Building scalable data pipelines and distributed systems that drive innovation.
+                </p>
+                
+                <!-- Key Value Propositions -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in-up" style="animation-delay: 0.35s;">
+                    <span class="px-4 py-2 bg-gray-800/50 border border-gray-700/50 rounded-full text-sm text-gray-300">Scalable Systems</span>
+                    <span class="px-4 py-2 bg-gray-800/50 border border-orange-500/30 rounded-full text-sm text-orange-400">AI Solutions</span>
+                    <span class="px-4 py-2 bg-gray-800/50 border border-gray-700/50 rounded-full text-sm text-gray-300">Cloud Native</span>
+                    <span class="px-4 py-2 bg-gray-800/50 border border-orange-500/30 rounded-full text-sm text-orange-400">Cost Optimized</span>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="#contact" 
+                       class="btn-primary flex items-center gap-2 px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 shadow-xl text-lg relative z-10 border-2 border-transparent hover:border-orange-400/30 transition-colors"
+                       aria-label="Get in touch with Michał Korzeniewski">
+                        <img src="/images/Mail.svg" alt="" class="w-5 h-5" aria-hidden="true">
+                        Get In Touch
+                    </a>
+                    <a href="https://www.linkedin.com/in/mkorzeniewski/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn-primary flex items-center gap-2 px-8 py-4 bg-gray-800/80 backdrop-blur-sm border border-gray-700 text-white rounded-lg font-semibold hover:bg-gray-700 shadow-xl text-lg relative z-10"
+                       aria-label="Visit Michał Korzeniewski's LinkedIn profile">
+                        <img src="/images/ln-white.svg" alt="" class="w-5 h-5" aria-hidden="true">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Impact Metrics Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900/50 to-transparent">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="metric-card rounded-xl p-6 text-center fade-in-on-scroll">
+                        <div class="text-4xl md:text-5xl font-bold gradient-text mb-2 counter" data-target="6">0</div>
+                        <div class="text-gray-400 text-sm md:text-base">Years Experience</div>
+                    </div>
+                    <div class="metric-card rounded-xl p-6 text-center fade-in-on-scroll">
+                        <div class="text-4xl md:text-5xl font-bold gradient-text mb-2 counter" data-target="15">0</div>
+                        <div class="text-gray-400 text-sm md:text-base">Technologies</div>
+                    </div>
+                    <div class="metric-card rounded-xl p-6 text-center fade-in-on-scroll">
+                        <div class="text-4xl md:text-5xl font-bold gradient-text mb-2 counter" data-target="60">0</div>
+                        <div class="text-gray-400 text-sm md:text-base">% Cost Reduction</div>
+                    </div>
+                    <div class="metric-card rounded-xl p-6 text-center fade-in-on-scroll">
+                        <div class="text-4xl md:text-5xl font-bold gradient-text mb-2 counter" data-target="5">0</div>
+                        <div class="text-gray-400 text-sm md:text-base">Industries</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/30" aria-labelledby="about-heading">
+            <div class="max-w-6xl mx-auto">
+                <h2 id="about-heading" class="text-4xl sm:text-5xl font-bold mb-16 text-center gradient-text fade-in-on-scroll">About</h2>
+                
+                <!-- Main Mission Statement -->
+                <div class="bg-gray-800/50 rounded-2xl p-8 sm:p-10 lg:p-12 shadow-xl mb-8">
+                    <p class="text-xl sm:text-2xl text-gray-200 leading-relaxed text-center font-medium mb-6">
+                        I'm a software engineer focused on turning <span class="text-blue-400 font-semibold">complex data and cloud technologies</span> into <span class="text-orange-400 font-semibold">clear business outcomes</span> through strong domain understanding and pragmatic engineering.
+                    </p>
+                </div>
+
+                <!-- Key Focus Areas - Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <!-- Specialization Card -->
+                    <div class="bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-3 text-white">Specialization</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    I specialize in <strong class="text-orange-400">cloud-native, distributed systems</strong> and <strong class="text-orange-400">big data</strong>, with day-to-day work in JVM languages such as <strong class="text-blue-400">Scala</strong>, <strong class="text-blue-400">Java</strong>, and <strong class="text-blue-400">Kotlin</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Architecture & Performance Card -->
+                    <div class="bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-orange-500">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-3 text-white">Architecture & Performance</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Proficiency in <strong class="text-orange-400">microservices architecture</strong> enables me to design and operate robust, scalable platforms that are <strong class="text-orange-400">cost-aware</strong> and <strong class="text-orange-400">performance-optimized</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interests & Approach -->
+                <div class="bg-gray-800/50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-500 mb-8">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-white">Interests & Approach</h3>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                My interests center on <strong class="text-blue-400">big data pipelines</strong>, <strong class="text-blue-400">streaming</strong>, and <strong class="text-blue-400">performance engineering</strong>, along with a practical approach to databases and DevOps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collaboration & Impact -->
+                <div class="bg-gradient-to-r from-gray-800/50 to-gray-800/30 rounded-xl p-6 sm:p-8 lg:p-10 shadow-lg border border-gray-700/50">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-600/20 rounded-full mb-6">
+                            <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-4">
+                            <strong class="text-white">Collaboration and effective communication</strong> are core to my work, helping align technical decisions with product goals and measurable business value.
+                        </p>
+                        <p class="text-lg sm:text-xl text-gray-200 font-medium">
+                            If you're looking for a dedicated engineer who blends <span class="text-blue-400">deep technical expertise</span> with <span class="text-orange-400">domain insight</span> to deliver impact, <span class="text-white font-semibold">let's connect</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="experience-heading">
+            <div class="max-w-6xl mx-auto">
+                <h2 id="experience-heading" class="text-4xl sm:text-5xl font-bold mb-16 text-center gradient-text">Experience</h2>
+                
+                <div class="space-y-8">
+                    <!-- Tesco Technology -->
+                    <article class="timeline-item bg-gray-800/50 rounded-xl p-6 sm:p-8 card-hover shadow-lg fade-in-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Senior Data Engineer</h3>
+                                <p class="text-xl text-orange-400 font-semibold">Tesco Technology</p>
+                            </div>
+                            <p class="text-gray-400 mt-2 sm:mt-0 font-medium bg-gray-700/50 px-3 py-1 rounded-full inline-block">2023 - Present</p>
+                        </div>
+                        <p class="text-gray-400 mb-4 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Remote, Poland
+                        </p>
+                        <ul class="list-none space-y-3 text-gray-300">
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                <span>Develop and maintain ETL pipelines using Scala and Apache Spark on Hadoop to process large-scale customer order data. Enabling better decision-making and analytics.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                <span>Led the modernization of a legacy codebase by introducing CI/CD processes, improving deployment efficiency and reducing manual interventions.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                <span>Established and advocate engineering best practices, enhancing code quality, maintainability, and collaboration within the team.</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Allegro -->
+                    <article class="timeline-item bg-gray-800/50 rounded-xl p-6 sm:p-8 card-hover shadow-lg fade-in-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Data Engineer</h3>
+                                <p class="text-xl text-orange-400 font-semibold">Allegro</p>
+                            </div>
+                            <p class="text-gray-400 mt-2 sm:mt-0 font-medium bg-gray-700/50 px-3 py-1 rounded-full inline-block">2021 - 2023</p>
+                        </div>
+                        <p class="text-gray-400 mb-4 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Warsaw, Poland
+                        </p>
+                        <ul class="list-none space-y-3 text-gray-300">
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                <span>Worked on PPC/PPV Advertising System based on lambda architecture (stream & batch processing) with usage of technologies such as Spark, GCP, Kafka, RxJava, TDD, hexagonal architecture</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-400 mt-1">▸</span>
+                                <span><strong class="text-orange-400">Cost Optimization:</strong> Migrated ETL processing on GCP, designed and optimized data pipelines, achieving cost reduction of over <strong class="text-orange-400">60%</strong> in infrastructure costs</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                <span>Coordinated process of expanding internationally; designed strategy, cooperated across department</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Roche -->
+                    <article class="timeline-item bg-gray-800/50 rounded-xl p-6 sm:p-8 card-hover shadow-lg fade-in-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Software Engineer</h3>
+                                <p class="text-xl text-orange-400 font-semibold">Roche</p>
+                            </div>
+                            <p class="text-gray-400 mt-2 sm:mt-0 font-medium bg-gray-700/50 px-3 py-1 rounded-full inline-block">2020 - 2021</p>
+                        </div>
+                        <p class="text-gray-400 mb-4 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Warsaw, Poland
+                        </p>
+                        <ul class="list-none space-y-3 text-gray-300">
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                <span>Developed distributed research decision platform leveraging ML & AI. Collaborated with scientist teams based in US</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-orange-400 mt-1">▸</span>
+                                <span><strong class="text-orange-400">Performance Optimization:</strong> Enabled product to scale by leading changes and advocating reactive approach in my team (instance numbers reduced from <strong class="text-orange-400">25 to 2</strong> with no memory leaks)</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Reckitt Benckiser -->
+                    <article class="timeline-item bg-gray-800/50 rounded-xl p-6 sm:p-8 card-hover shadow-lg fade-in-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Software Engineer</h3>
+                                <p class="text-xl text-orange-400 font-semibold">Reckitt Benckiser</p>
+                            </div>
+                            <p class="text-gray-400 mt-2 sm:mt-0 font-medium bg-gray-700/50 px-3 py-1 rounded-full inline-block">2018 - 2020</p>
+                        </div>
+                        <p class="text-gray-400 mb-4 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Warsaw, Poland
+                        </p>
+                        <ul class="list-none space-y-3 text-gray-300">
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                <span>Developed a distributed system for collecting worldwide clients survey data with technologies like Vert.x, RxJava, Hazelcast</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                <span>Led architecting and implementing a data stream processing solution using AWS Kinesis, Lambda (Python) with an IOC written in terraform</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/30" aria-labelledby="skills-heading">
+            <div class="max-w-6xl mx-auto">
+                <h2 id="skills-heading" class="text-4xl sm:text-5xl font-bold mb-16 text-center gradient-text">Skills & Expertise</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Languages -->
+                    <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
+                        <h3 class="text-xl font-bold mb-4 text-orange-400 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                            Languages
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Java</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Scala</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Kotlin</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Python</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Bash</span>
+                        </div>
+                    </div>
+
+                    <!-- Big Data -->
+                    <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                            </svg>
+                            Big Data
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Apache Spark</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Apache Airflow</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">BigQuery</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Dataproc</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Hive</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Hadoop</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Jupyter Notebooks</span>
+                        </div>
+                    </div>
+
+                    <!-- AI & LangChain -->
+                    <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll border-2 border-orange-500/50">
+                        <h3 class="text-xl font-bold mb-4 text-orange-400 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                            AI & LangChain
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-sm font-semibold border border-orange-500/50">LangChain</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-sm font-semibold border border-orange-500/50">LLM</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-sm font-semibold border border-orange-500/50">Huggingface</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-sm font-semibold border border-orange-500/50">Machine Learning</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                            </svg>
+                            Cloud & DevOps
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">GCP</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">AWS</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Docker</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Kubernetes</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Terraform</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Ansible</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Linux</span>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                            Frameworks
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spring Boot</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spring Cloud</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spring Webflux</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">RxJava</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spock</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Technologies -->
+                    <div class="bg-gray-800/80 rounded-xl p-6 shadow-lg card-hover fade-in-on-scroll">
+                        <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                            </svg>
+                            Data Technologies
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Kafka</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">PostgreSQL</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">MongoDB</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Redis</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Cassandra</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Elastic Search</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="education-heading">
+            <div class="max-w-4xl mx-auto">
+                <h2 id="education-heading" class="text-4xl sm:text-5xl font-bold mb-16 text-center gradient-text fade-in-on-scroll">Education</h2>
+                
+                <div class="space-y-6">
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-2xl font-bold mb-2">Master's Degree in Computer Science</h3>
+                        <p class="text-xl text-orange-400 mb-2 font-semibold">Warsaw University of Technology</p>
+                        <p class="text-gray-400 mb-2">2019 - 2021</p>
+                        <p class="text-gray-300">GPA: 4.63/5 - Very Good</p>
+                        <p class="text-gray-300 mt-2">Thesis: Cloud computing security – a secure container orchestration</p>
+                    </article>
+
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-2xl font-bold mb-2">Bachelor's Degree in Mechanical Engineering</h3>
+                        <p class="text-xl text-orange-400 mb-2 font-semibold">Warsaw University of Technology</p>
+                        <p class="text-gray-400 mb-2">2015 - 2019</p>
+                        <p class="text-gray-300 mt-2">Thesis: Computational analysis of flow around levitating oil droplet</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/30" aria-labelledby="certifications-heading">
+            <div class="max-w-4xl mx-auto">
+                <h2 id="certifications-heading" class="text-4xl sm:text-5xl font-bold mb-16 text-center gradient-text fade-in-on-scroll">Certifications</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <article class="bg-gray-800 rounded-xl p-6 sm:p-8 border-2 border-orange-500 shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-2">Professional Data Engineer</h3>
+                        <p class="text-orange-400 mb-2 font-semibold">Google Cloud</p>
+                        <p class="text-gray-400 text-sm mb-4">Issued: May 2022 | Expired: May 2024</p>
+                        <a href="https://www.credential.net/c1495d63-756e-43c0-b632-3fe1589db335" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1">
+                            View Credential <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="bg-gray-800 rounded-xl p-6 sm:p-8 border-2 border-orange-500 shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-2">AWS Certified Solutions Architect – Associate</h3>
+                        <p class="text-orange-400 mb-2 font-semibold">Amazon Web Services (AWS)</p>
+                        <p class="text-gray-400 text-sm mb-4">Issued: Aug 2022 | Expires: Aug 2025</p>
+                        <a href="https://www.credly.com/badges/6cb0f813-7d47-483e-967b-4ca7c6ba866d/linked_in_profile" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1">
+                            View Credential <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="projects-heading">
+            <div class="max-w-4xl mx-auto">
+                <h2 id="projects-heading" class="text-4xl sm:text-5xl font-bold mb-16 text-center gradient-text">Featured Projects</h2>
+                
+                <div class="space-y-6">
+                    <!-- Hackathons -->
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-orange-500 shadow-lg card-hover fade-in-on-scroll">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Hackathons</h3>
+                                <p class="text-gray-300 mb-4">Member of the award-winning hackathon team <a href="https://krakenteam.it" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-medium underline decoration-2 underline-offset-2">krakenteam.it</a></p>
+                            </div>
+                            <span class="px-3 py-1 bg-orange-600/30 text-orange-300 rounded-full text-xs font-semibold border border-orange-500/50">Award Winner</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Python</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Django</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Huggingface</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">LLM</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Postgres</span>
+                            <span class="tech-badge px-3 py-1 bg-orange-600/20 text-orange-300 rounded-full text-sm border border-orange-500/30">Docker</span>
+                        </div>
+                        <div class="bg-orange-600/10 border border-orange-500/20 rounded-lg p-3">
+                            <p class="text-gray-300 text-sm">
+                                <strong class="text-orange-400">Awards:</strong> Participant of Hack(art)hon (Sep 2022), Finalist of Kimaton dla Miast (Nov 2021)
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- TokLok -->
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 shadow-lg card-hover fade-in-on-scroll">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">TokLok</h3>
+                                <p class="text-gray-300 mb-4">Messaging app - improving infrastructure, optimising costs, developing integration with payment system</p>
+                            </div>
+                            <span class="px-3 py-1 bg-blue-600/30 text-blue-300 rounded-full text-xs font-semibold border border-blue-500/50">Production</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Java</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">MongoDB</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">MQTT</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Redis</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">RabbitMQ</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Spring Boot</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">AWS</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Axon</span>
+                        </div>
+                    </article>
+
+                    <!-- OpenTelemetry -->
+                    <article class="bg-gray-800/50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 shadow-lg card-hover fade-in-on-scroll">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">OpenTelemetry Java</h3>
+                                <p class="text-gray-300 mb-4">Contribution to an open source project</p>
+                            </div>
+                            <span class="px-3 py-1 bg-blue-600/30 text-blue-300 rounded-full text-xs font-semibold border border-blue-500/50">Open Source</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Open Source</span>
+                            <span class="tech-badge px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-500/30">Java</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/30 to-orange-900/30 border-y border-gray-700/50">
+            <div class="max-w-4xl mx-auto text-center fade-in-on-scroll">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6 gradient-text">Let's Connect</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    I'm open to discussing new projects, technical challenges, or opportunities to contribute to your team's success.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="mailto:me@mkorzeniewski.com" 
+                       class="btn-primary flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-orange-600 text-white rounded-lg font-semibold shadow-xl text-lg"
+                       aria-label="Send email to Michał Korzeniewski">
+                        <img src="/images/Mail.svg" alt="" class="w-5 h-5" aria-hidden="true">
+                        Get In Touch
+                    </a>
+                    <a href="https://www.linkedin.com/in/mkorzeniewski/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn-primary flex items-center gap-2 px-8 py-4 bg-gray-800/80 backdrop-blur-sm border border-gray-700 text-white rounded-lg font-semibold hover:bg-gray-700 shadow-xl text-lg"
+                       aria-label="Visit Michał Korzeniewski's LinkedIn profile">
+                        <img src="/images/ln-white.svg" alt="" class="w-5 h-5" aria-hidden="true">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 border-t border-gray-800" role="contentinfo">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Navigation Links -->
+                <nav aria-label="Footer navigation">
+                    <h3 class="text-xl font-bold mb-4 text-white">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition-colors">About</a></li>
+                        <li><a href="#experience" class="text-gray-400 hover:text-blue-400 transition-colors">Experience</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-blue-400 transition-colors">Skills</a></li>
+                        <li><a href="#education" class="text-gray-400 hover:text-blue-400 transition-colors">Education</a></li>
+                        <li><a href="#certifications" class="text-gray-400 hover:text-blue-400 transition-colors">Certifications</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-blue-400 transition-colors">Projects</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <a href="mailto:me@mkorzeniewski.com" 
+                           class="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
+                           aria-label="Send email to me@mkorzeniewski.com">
+                            <img src="/images/Mail.svg" alt="" class="w-5 h-5" aria-hidden="true">
+                            <span>me@mkorzeniewski.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mkorzeniewski/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors"
+                           aria-label="Visit LinkedIn profile">
+                            <img src="/images/ln-white.svg" alt="" class="w-5 h-5" aria-hidden="true">
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Connect</h3>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/in/mkorzeniewski/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors"
+                           aria-label="LinkedIn">
+                            <img src="/images/ln-white.svg" alt="" class="w-6 h-6" aria-hidden="true">
+                        </a>
+                        <a href="mailto:me@mkorzeniewski.com" 
+                           class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white hover:text-gray-900 transition-colors"
+                           aria-label="Email">
+                            <img src="/images/Mail.svg" alt="" class="w-6 h-6" aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright and Additional Links -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                    <p class="text-gray-400">
+                        © <span id="current-year">2024</span> Michał Korzeniewski. All rights reserved.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-end gap-4 text-sm">
+                        <a href="https://mkorzeniewski.com" class="text-gray-400 hover:text-blue-400 transition-colors">mkorzeniewski.com</a>
+                        <a href="/robots.txt" class="text-gray-400 hover:text-blue-400 transition-colors">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            const isOpen = mobileMenu.classList.toggle('open');
+            mobileMenuButton.setAttribute('aria-expanded', isOpen);
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('open');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Scroll Progress Bar
+        const scrollProgress = document.getElementById('scroll-progress');
+        function updateScrollProgress() {
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / windowHeight) * 100;
+            scrollProgress.style.transform = `scaleX(${scrolled / 100})`;
+        }
+        window.addEventListener('scroll', updateScrollProgress);
+        updateScrollProgress();
+        
+        // Scroll-triggered Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Trigger skill bar animation
+                    if (entry.target.querySelector('.skill-bar-fill')) {
+                        const skillBars = entry.target.querySelectorAll('.skill-bar-fill');
+                        skillBars.forEach(bar => {
+                            const width = bar.getAttribute('data-width');
+                            setTimeout(() => {
+                                bar.style.width = width + '%';
+                            }, 100);
+                        });
+                    }
+                    // Trigger counter animation
+                    if (entry.target.querySelector('.counter')) {
+                        const counters = entry.target.querySelectorAll('.counter');
+                        counters.forEach(counter => {
+                            const target = parseInt(counter.getAttribute('data-target'));
+                            if (!counter.classList.contains('counted')) {
+                                counter.classList.add('counted');
+                                animateCounter(counter, target);
+                            }
+                        });
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all fade-in-on-scroll elements
+        document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Counter Animation
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const duration = 2000;
+            const stepTime = duration / 50;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, stepTime);
+        }
+        
+        // Parallax Effect for Hero Section
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const hero = document.getElementById('hero');
+            if (hero) {
+                const parallaxElements = hero.querySelectorAll('.floating-icon');
+                parallaxElements.forEach((el, index) => {
+                    const speed = 0.5 + (index * 0.1);
+                    const yPos = -(scrollTop * speed);
+                    el.style.transform = `translateY(${yPos}px) rotate(${scrollTop * 0.1}deg)`;
+                });
+            }
+            lastScrollTop = scrollTop;
+        });
+        
+        // Lazy loading images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.classList.add('loaded');
+                });
+            });
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Add active state to navigation links on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+        
+        function updateActiveNavLink() {
+            const scrollY = window.pageYOffset;
+            
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-blue-400');
+                        link.classList.add('text-gray-300');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.remove('text-gray-300');
+                            link.classList.add('text-blue-400');
+                        }
+                    });
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveNavLink);
+        updateActiveNavLink();
+        
+        // Initialize skill bars on page load if they're already visible
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    const width = bar.getAttribute('data-width');
+                    setTimeout(() => {
+                        bar.style.width = width + '%';
+                    }, 300);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
